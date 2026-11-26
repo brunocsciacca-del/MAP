@@ -1,0 +1,45 @@
+.wrapHome {
+  min-height: 100vh;
+  height: auto;
+  background-color: var(--light);
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.map {
+  width: 70vw;
+  height: 70vh;
+  border-radius: 20px;
+  box-shadow: var(--sombra);
+}
+
+.mapButtons button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: white;
+  color: #222;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0003;
+  transition: .2s;
+  margin: 5px;
+}
+
+.mapButtons button:hover {
+  background: var(--azul);
+  color: white;
+}
+
+@media (width <=1000px) {
+  .map {
+    width: 90vw;
+    height: 90vh;
+    border-radius: 0px;
+    box-shadow: var(--sombra);
+  }
+}
